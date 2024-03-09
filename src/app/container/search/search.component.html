@@ -1,0 +1,5 @@
+<div class="search-box">
+    <input class ="search-input" [(ngModel)]="searchText">
+    <button [ngClass]="{'btn':true, 'search-btn':searchText, 'disabled-search':!searchText}" [disabled]="!searchText">Search</button>
+</div>
+    <div class="search-result" ><p *ngIf="searchText"><strong>Search result for:</strong> {{ searchText }}</p></div>
